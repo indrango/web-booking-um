@@ -1,0 +1,19 @@
+{
+  "name": "web-booking-um",
+  "version": "1.0.0",
+  "description": "An website for booking ujian mandiri",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/indrango/web-booking-um.git"
+  },
+  "author": "Indra Nugraha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/indrango/web-booking-um/issues"
+  },
+  "homepage": "https://github.com/indrango/web-booking-um#readme"
+}
