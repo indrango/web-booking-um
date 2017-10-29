@@ -1,4 +1,5 @@
 const Booking = require('../models/booking')
+const crypto = require('crypto')
 
 module.exports = function(app) {
 
@@ -14,22 +15,23 @@ module.exports = function(app) {
         })
 
         // post data
-        .post(function(req, res) {
+        .post(function(req, res, next) {
             let booking = new Booking();
-            // booking.id_booking = req.body.id_booking
-            // booking.kd_voucher = req.body.kd_voucher
-            // booking.npm_mhs = req.body.npm_mhs
+            const idGen = crypto.randomBytes(4).toString('hex')
+            booking.id_booking = idGen
+            booking.kd_voucher = req.body.kd_voucher
+            booking.npm_mhs = req.body.npm_mhs
             booking.nama_mhs = req.body.nama_mhs
-            // booking.jenis_kel = req.body.jenis_kel
-            // booking.tgl_lahir = req.body.tgl_lahir
-            // booking.fakultas = req.body.fakultas
-            // booking.jurusan = req.body.Jurusan
-            // booking.email = req.body.email
-            // booking.waktu = Date.now().toString()
+            booking.jenis_kel = req.body.jenis_kel
+            booking.tgl_lahir = req.body.tgl_lahir
+            booking.fakultas = req.body.fakultas
+            booking.jurusan = req.body.Jurusan
+            booking.email = req.body.email
 
             booking.save(function(err, bookings) {
                 if (err)
                     res.send(err);
+
                 res.json(bookings)
             });
         });

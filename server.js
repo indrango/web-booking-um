@@ -26,6 +26,7 @@ mongoose.connect(config.database, function(err) {
         console.log('connected')
 });
 
+
 // routes
 require('./controllers/bookingRoutes')(app);
 
