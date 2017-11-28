@@ -1,0 +1,100 @@
+   .kiri {
+      box-sizing: border-box;
+      background: #894C9E;
+      height: 668px;
+      font-family: 'Raleway', Arial;
+    }
+    .tulisan{
+      font-family: 'Montserrat', sans-serif;
+      margin: 200px 30px 10px 50px;
+      letter-spacing: 1px;
+    }
+    .tulisan h1{
+      font-weight: bold;
+      text-align: left;
+      color: #FFD629;
+    }
+    .tulisan p{
+      margin-top: 10px;
+      padding-top: 15px;
+      font-size: 16px;
+      text-align: left;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+    .tulisan .lines{
+      margin: 5px 5px 0px 0px;
+      width: 40px;
+      position: relative;
+      border-bottom: 2px solid #fff;
+      border-radius: 20px;
+      bottom: 5px;
+    }
+    .icon{
+      height: 100px;
+      width: 100px;
+      margin: 40px 5px 0px 60px;
+    }
+
+    .kanan {
+      padding: 80px 10px 20px 100px;
+      box-sizing: border-box;
+      background: #F2F2F2;
+      height: 668px;
+      font-family: 'Montserrat', Arial;
+    }
+    .prev{
+      margin: 35px 0px 10px -150px;
+      background-color: #73378A; 
+      color: #FFD629;
+      border-radius: 20px;
+      font-family: 'Montserrat', sans-serif; 
+      font-weight: bold;
+    }
+    .next{
+      margin: 35px 0px 10px 460px;
+      background-color: #FFD629;
+      color: #894C9E;
+      border-radius: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 25px;
+      }
+      .row.content {height: auto;} 
+    }
+    @media screen and (max-width: 360px) {
+      .kiri {
+        height: auto;
+        padding: 25px;
+      }
+      .row.content {height: auto;} 
+
+    .tulisan{
+        margin: 10px 30px 10px 25px;
+    }
+    .icon{
+      height: 70px;
+      width: 70px;
+      margin: 20px 5px 0px 25px;
+    }
+    .kanan {
+      padding: 50px 20px 20px 20px;
+      height: 100%;
+    }
+    .prev{
+      margin: 0px 0px 0px 0px; 
+    }
+    .next{
+      margin: -55px 0px 10px 120px;
+    }
+
+    .col-sm-8{
+      margin-bottom: 5px;
+    }
+    }

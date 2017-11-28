@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>FORM BOOK UM</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+ <link rel="stylesheet" href="/css/verif.css"> 
+ 
+</head>
+<body>
+    <div class="col-sm-3 kiri">
+        <div class="center">
+          <div class="tulisan">
+            <h1> Verifikasi<br>Data </h1>
+              <p> Apakah kamu Yakin<br>Data Yang Kamu<br>Masukan Sudah Benar ?</p>
+              <hr class="lines wow zoomIn" data-wow-delay="0.3s"> 
+          </div>  
+          <div class="icon">
+            <img src="/img/Com02.png" class="img-responsive" alt="icon">
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-9 kanan">
+      <form action="/users/submit" method="post">
+        <div class="form-group">
+          <label class="col-sm-2 control-label"> Kode Voucher <%= data.kd_voucher %></label>
+          <br><br>
+          <label class="col-sm-2 control-label"> NPM : <%= data.npm_mhs %> </label>
+          <br><br>
+          <label class="col-sm-2 control-label"> Nama : <%= data.nama_mhs %></label>
+          <br><br>  
+          <label class="col-sm-2 control-label"> Jenis Kelamin : <%= data.jenis_kel %></label>
+          <br><br>
+          <label class="col-sm-2 control-label"> Tanggal Lahir : <%= data.tgl_lahir %> </label>
+          <br><br> 
+          <label class="col-sm-2 control-label"> Fakultas : <%= data.fakultas %> </label>
+          <br><br>
+          <label class="col-sm-2 control-label"> Jurusan : <%= data.jurusan %> </label>
+          <br><br>
+          <label class="col-sm-2 control-label" name="email"> Email : <%= data.email %> </label>
+          <br><br>
+          <br><br>
+          <label class="col-sm-2 control-label"></label>
+
+          <div class="col-sm-1">
+            <a href="/users/edit" type="button" class="btn btn-lg prev"> Kembali </a>
+          </div>
+
+          <div class="col-sm-1">
+            <button class="btn btn-lg next" type="submit">Verifikasi</button> 
+          </div>
+
+         </div>
+        </div>
+      </form>
+
+  </div>
+</body>
+</html>

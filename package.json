@@ -17,10 +17,22 @@
   },
   "homepage": "https://github.com/indrango/web-booking-um#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
     "crypto": "^1.0.1",
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "local": "^0.3.3",
+    "mailgun": "^0.5.0",
+    "mailgun-js": "^0.13.1",
     "moment": "^2.19.1",
     "mongoose": "^4.12.4",
-    "mongoose-auto-increment": "^5.0.1"
+    "mongoose-auto-increment": "^5.0.1",
+    "morgan": "^1.9.0",
+    "nodemailer": "^4.4.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
   }
 }

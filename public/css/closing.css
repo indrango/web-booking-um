@@ -1,0 +1,100 @@
+.navbar-custom {
+  background-color: transparent;
+  padding: 10px;
+}
+.navbar-custom .navbar-brand {
+  color: #fed136;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus,
+.navbar-custom .navbar-brand:active,
+.navbar-custom .navbar-brand.active {
+  color: #fec503;
+}
+.navbar-custom .navbar-collapse {
+  border-color: rgba(255, 255, 255, 0.02);
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #fed136;
+}
+.navbar-custom .nav li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: white;
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus {
+  background: #894C9E;
+  border-radius: 50px;
+  color: #fed136;
+  outline: none;
+}
+.navbar-custom .navbar-brand img{
+    width: 150px;
+    height: 40px;
+}
+
+  header {
+    background-color: #894C9E; 
+    background-size: cover;
+    border-bottom: 2px solid #FFD629; 
+    color: #FFF;
+    padding-bottom: 65px;
+  }
+  header .center {
+    margin-top: 100px;
+    margin-bottom: 58px;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  header .gambar img {
+      margin: 10px 0px 30px 0px;
+      background: #fff;
+      border-radius: 50%;
+      width: 170px;
+      height: 170px;
+  }
+  header .center .intro-body{
+    margin-top: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    line-height: 30px;
+  }
+  header .icon{
+    margin-bottom: -60px;
+  }
+
+@media only screen and ( max-width: 360px ) {
+  header {
+    padding-bottom: 95px;
+  }
+  header .center {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  header .gambar img {
+      margin: 10px 0px 30px 0px;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+  }
+  header .center .intro-body{
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+  }
+  header .icon{
+    padding-bottom: 0px;
+    margin-top: 30px;
+    margin-bottom: -90px;
+  }
+
+}

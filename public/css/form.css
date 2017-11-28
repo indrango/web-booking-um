@@ -1,0 +1,108 @@
+    .kiri {
+      box-sizing: border-box;
+      background: #894C9E;
+      height: 668px;
+      font-family: 'Raleway', Arial;
+    }
+    .kiri .back{
+      margin: 20px 15px 20px 0px;
+    }
+    .back .form-group label{
+      margin-top: 5px; 
+      font-weight: bold;
+      font-size: 18px;
+      color: #fff;
+      font-family: 'Montserrat', Arial;
+    }
+    .gambar img{
+        margin: 25px 50px 20px 60px;
+        background: #fff;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+    .tulisan{
+        font-family: 'Montserrat', sans-serif;
+        margin: 10px 30px 10px 60px;
+        letter-spacing: 1px;
+    }
+    .tulisan h3{
+      font-size: 22px;
+      font-weight: bold;
+      text-align: left;
+      color: #FFD629;
+    }
+    .tulisan p{
+      margin-top: 10px;
+      padding-top: 15px;
+      font-size: 16px;
+      text-align: left;
+      color: #fff;
+      letter-spacing: 0.5px;
+    }
+    .tulisan .lines{
+      margin: 5px 5px 0px 0px;
+      width: 40px;
+      position: relative;
+      border-bottom: 2px solid #fff;
+      border-radius: 20px;
+      bottom: 5px;
+    }
+    .icon{
+      height: 100px;
+      width: 100px;
+      margin: 40px 5px 0px 60px;
+    }
+    .kanan {
+      padding: 80px 10px 20px 100px;
+      box-sizing: border-box;
+      background: #F2F2F2;
+      height: 668px;
+      font-family: 'Montserrat', Arial;
+    }
+    .next{
+      margin: 10px 0px 10px 10px;
+      background-color: #FFD629;
+      color: #894C9E;
+      border-radius: 20px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 25px;
+      }
+      .row.content {height: auto;} 
+    }
+    @media screen and (max-width: 360px) {
+      .kiri {
+        height: auto;
+        padding: 25px;
+      }
+      .row.content {height: auto;} 
+    .gambar img{
+        margin: 10px 50px 15px 75px;
+    }
+    .tulisan{
+        margin: 10px 50px 10px 75px;
+    }
+    .icon{
+      height: 70px;
+      width: 70px;
+      margin: 20px 5px 0px 77px;
+    }
+    .kanan {
+      padding: 50px 20px 20px 20px;
+      height: 100%;
+    }
+    .next{
+      margin: -25px 0px 10px 0px;
+    }
+
+    .col-sm-8{
+      margin-bottom: 5px;
+    }
+    }

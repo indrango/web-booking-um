@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Page | Web Booking UM</title>
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Custom Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+  <div class="col-md-2">
+    <br>
+    <form action="/admin/dashboard/" method="get">
+      <button type="submit" class="btn btn-warning">Data Mahasiswa</button>
+    </form>
+    <br>
+    <form action="/admin/dashboard/kursus" method="get">
+      <button type="submit" class="btn btn-warning">Data Kursus</button>
+    </form>
+    <br>
+    <form action="/admin/logout" method="post">
+      <button type="submit" class="btn btn-warning">Logout</button>
+    </form>
+  </div>
+
+  <div class="col-md-10">
+      <h1>Admin Page</h1>
+      <h2>Data Mahasiswa</h2>
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Kode Voucher</th>
+              <th scope="col">NPM</th>
+              <th scope="col">Nama</th>
+              <th scope="col">Jenis Kelamin</th>
+              <th scope="col">Tanggal Lahir</th>
+              <th scope="col">Fakultas</th>
+              <th scope="col">Jurusan</th>
+              <th scope="col">Email</th>
+              <th scope="col">Urutan</th>
+              <th scope="col">Sesi UM</th>
+              <th scope="col">Ruang UM</th>
+              <th scope="col">Meja UM</th>
+              <th scope="col">Waktu Daftar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% users.forEach(function(user) { %>  
+            <tr>
+              <td><%= user.id_booking %></td>
+              <td><%= user.kd_voucher %></td>              
+              <td><%= user.npm_mhs %></td>
+              <td><%= user.nama_mhs %></td>
+              <td><%= user.jenis_kel %></td>
+              <td><%= user.tgl_lahir %></td>
+              <td><%= user.fakultas %></td>
+              <td><%= user.jurusan %></td>
+              <td><%= user.email %></td>
+              <td><%= user.urutan %></td> 
+              <td><%= user.sesi_um %></td>
+              <td><%= user.ruang_um %></td>
+              <td><%= user.meja_um %></td>
+              <td><%= user.waktu %></td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+      <ul>
+      </ul>
+  </div>
+
+</body>
+</html>
