@@ -39,7 +39,7 @@
 }
 
   #home {
-    background: url('../img/background.png') no-repeat;
+    background: url('/img/background.png') no-repeat;
     background-size: cover;
     border-bottom: 2px solid #FFD629; 
     color: #FFF;

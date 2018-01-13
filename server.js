@@ -24,9 +24,9 @@ app.use(passport.session());
 app.use(flash());
 
 // user
-app.get('/', function(req, res) {
-    res.render(__dirname + '/views/users/index')
-})
+// app.get('/', function(req, res) {
+//     res.render(__dirname + '/views/users/index')
+// })
 
 // set up mongoose
 mongoose.connect(config.database, function(err) {

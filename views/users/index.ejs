@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!--Bootstrap-->
-  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+  <script src="/vendor/jquery/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 
   
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/landing.css">
+  <link rel="stylesheet" href="/css/users/landing.css">
 
   <!-- Custom Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -35,7 +35,7 @@
         <span class="icon-bar"></span>                        
       </button>
         <a class="navbar-brand page-scroll" href="#top">
-            <img src="img/Gundar.png" class="img-responsive" alt="gundar">
+            <img src="/img/Gundar.png" class="img-responsive" alt="gundar">
         </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
@@ -65,9 +65,9 @@
                 </div>
                 <div class="col-sm-2 form-group right">
                     <p class="intro-head">
-                        Sisa Kuota <br>Pendaftran<br><span> 15/10/2017 </span>
+                        Sisa Kuota <br>Pendaftran Besok<br><span> <%= date %> </span>
                     </p>
-                    <p class="intro-body"> 276 </p>
+                    <p class="intro-body"><%= quota %> </p>
                 </div>    
             </form>
             <label class="col-sm-4"></label>

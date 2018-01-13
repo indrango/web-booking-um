@@ -1,0 +1,108 @@
+
+.sidebar .nav p {
+    margin: 0;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 35px;
+}
+.sidebar ul{
+    text-decoration: none;
+}
+
+.navbar .navbar-header a{
+    font-family: 'Raleway', arial;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.navbar .collapse .nav i{
+    font-size: 40px;
+    float: left;
+    margin-right: 10px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+}
+
+.navbar .collapse .nav p{
+    font-family: 'Raleway', arial;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-left: 45px;
+}
+
+.header h3{
+    font-family: 'Montserrat', arial;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.header p{
+    font-family: 'Raleway', arial;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.all-icons [class*="pe-"]{
+    font-size: 60px;
+}
+.all-icons p{
+    border: 0;
+}
+.all-icons .font-icon-detail{
+    text-align: center;
+    padding: 15px 0px 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+.all-icons .font-icon-detail p{
+    font-family: 'Raleway', arial;
+    margin: 15px auto 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    color: #aaa;
+    font-size: 14px;
+}
+
+
+.table{
+    font-family: 'Montserrat', arial;
+    font-size: 12px;
+    text-align: center;
+}
+
+.table th{
+    font-family: 'Montserrat', arial;
+    text-align: center;
+}
+
+.sidebar .nav > li.active-pro{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+}
+.sidebar .nav > li.active-pro a{
+    background: rgba(255, 255, 255, 0.14);
+    opacity: 1;
+    color: #FFFFFF;
+}
+
+.table-upgrade td:nth-child(2),
+.table-upgrade td:nth-child(3){
+    text-align: center;
+}
+
+
+@media all and (max-width: 991px)  {
+    .sidebar .nav > li.active-pro{
+        position: initial;
+    }
+}

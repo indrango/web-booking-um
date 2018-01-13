@@ -4,21 +4,18 @@
     <title>FORM BOOK UM</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <script src="/vendor/jquery/jquery.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="/css/form.css"> 
-    <link rel="stylesheet" href="/css/landing.css"> 
+    <link rel="stylesheet" href="/css/users/form.css"> 
+    <link rel="stylesheet" href="/css/users/landing.css"> 
   </head>
 
   <body>
 
-    <!-- Start Navigation-->
-    <nav id="mainNav" class="navbar-default navbar-custom navbar-fixed-top">
+    <nav id="formNav" style="background: #894C9E; height:90px;" class=" navbar-default navbar-custom navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collased" data-toggle="collapse" data-target="#myNavbar">
@@ -27,119 +24,119 @@
             <span class="icon-bar"></span>                        
           </button>
             <a class="navbar-brand page-scroll" href="#top">
-                <img src="img/Gundar.png" class="img-responsive" alt="gundar">
+                <img src="/img/Gundar.png" class="img-responsive" alt="gundar">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right active">
-            <li><a class="active" href="#top">Home</a></li>
+            <li><a class="active" href="/">Home</a></li>
             <li><a class="active" href="/users/form">Daftar</a></li>
-            <li><a class="active" href="#contact">Contact</a></li>
-            <li><a class="active" href="#faq">FAQ</a></li>
+            <li><a class="active" href="/">Contact</a></li>
+            <li><a class="active" href="/">FAQ</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <!-- End Navigation-->
 
-    <div class="col-sm-3 kiri">
-      <a href="#">
-        <form class="form-inline back">
-          <div class="form-group"> 
-            <a href="/"><img src="/img/back.png" class="img-responsive" alt="kembali"><label>KEMBALI</label></a>
+    <div>
+      <div class="col-sm-3 kiri">
+        <!-- <a href="#">
+          <form class="form-inline back">
+            <div class="form-group"> 
+              <a href="/"><img src="/img/back.png" class="img-responsive" alt="kembali"></a>
+            </div>
+          </form>
+        </a> -->
+          <div class="center">
+            <div class="gambar">
+              <img src="/img/Com03.png" class="img-responsive" alt="ico">
+            </div>
+            <div class="tulisan">
+              <h3> Ayo Lengkapi Profilmu </h3>
+                <p> Isi data berikut<br>dengan benar untuk<br>mendaftarkan dirimu.</p>
+                <hr class="lines wow zoomIn" data-wow-delay="0.3s"> 
+            </div>
+            <div class="icon">
+              <img src="/img/Com02.png" class="img-responsive" alt="icon">
+            </div>  
           </div>
-        </form>
-      </a>
-        <div class="center">
-          <div class="gambar">
-            <img src="/img/Com03.png" class="img-responsive" alt="ico">
-          </div>
-          <div class="tulisan">
-            <h3> Ayo Lengkapi Profilmu </h3>
-              <p> Isi data berikut<br>dengan benar untuk<br>mendaftarkan dirimu.</p>
-              <hr class="lines wow zoomIn" data-wow-delay="0.3s"> 
-          </div>
-          <div class="icon">
-            <img src="/img/Com02.png" class="img-responsive" alt="icon">
-          </div>  
-        </div>
-    </div>
+      </div>
 
-    <!-- Form kanan -->
-    <div class="col-sm-9 kanan">
-      <form action="/users/submit" method="post">
-        <div class="form-group">
-          <label class="col-sm-2 control-label"> Kode Voucher </label>
-          <div class="col-sm-9">
-            <input class="form-control" name="kd_voucher" id="kode" type="text" placeholder="8 Digit Kode Voucher">
+      <!-- Form kanan -->
+      <div class="col-sm-9 kanan">
+        <form action="/users/submit" method="post">
+          <div class="form-group">
+            <label class="col-sm-2 control-label"> Kode Voucher </label>
+            <div class="col-sm-9">
+              <input  class="form-control" name="kd_voucher" id="kode" type="text" placeholder="8 Digit Kode Voucher">
+            </div>
+            <br><br>
+            <label class="col-sm-2 control-label"> NPM </label>
+            <div class="col-sm-9">
+              <input class="form-control" name="npm_mhs" id="npm" type="text" placeholder="NPM Anda" required>
+            </div>
+            <br><br>
+            <label class="col-sm-2 control-label"> Nama </label>
+            <div class="col-sm-9">
+              <input class="form-control" name="nama_mhs" id="nama" type="text" placeholder="Nama Anda" required>
+            </div>
+            <br><br>  
+            <label class="col-sm-2 control-label"> Jenis Kelamin </label>
+            <div class="col-sm-9">
+              <label class="radio-inline">
+                <input type="radio" name="jenis" value="Laki-laki"> Laki-Laki
+              </label>
+              <label class="radio-inline">
+                <input type="radio" name="jenis" value="Perempuan"> Perempuan
+              </label>
+            </div>
+            <br><br>
+            <label class="col-sm-2 control-label"> Tanggal Lahir </label>
+            <div class="col-sm-9">
+              <input class="form-control" name="tgl_lahir" id="ttl" type="text" placeholder="Tanggal/Bulan/Tahun" required>
+            </div>
+            <br><br> 
+            <label class="col-sm-2 control-label"> Fakultas </label>
+            <div class="col-sm-9">
+              <input class="form-control" name="fakultas" id="fakultas" type="text" placeholder="Fakultas Anda" required>
+            </div>
+            <br><br>
+            <label class="col-sm-2 control-label"> Jurusan </label>
+            <div class="col-sm-9">
+              <input class="form-control" name="jurusan" id="jurusan" type="text" placeholder="Jurusan Anda" required>
+            </div>
+            <br><br>
+            <label class="col-sm-2 control-label"> Email </label>
+            <div class="col-sm-9">
+              <input class="form-control" name="email" id="email" type="text" placeholder="Masukan Email Anda" required>
+            </div>
+            <br><br>
+            <label class="col-sm-9 control-label"></label>
           </div>
-          <br><br>
-          <label class="col-sm-2 control-label"> NPM </label>
-          <div class="col-sm-9">
-            <input class="form-control" name="npm_mhs" id="npm" type="text" placeholder="NPM Anda">
-          </div>
-          <br><br>
-          <label class="col-sm-2 control-label"> Nama </label>
-          <div class="col-sm-9">
-            <input class="form-control" name="nama_mhs" id="nama" type="text" placeholder="Nama Anda">
-          </div>
-          <br><br>  
-          <label class="col-sm-2 control-label"> Jenis Kelamin </label>
-          <div class="col-sm-9">
-            <label class="radio-inline">
-              <input type="radio" name="jenis" value="Laki-laki"> Laki-Laki
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="jenis" value="Perempuan"> Perempuan
-            </label>
-          </div>
-          <br><br>
-          <label class="col-sm-2 control-label"> Tanggal Lahir </label>
-          <div class="col-sm-9">
-            <input class="form-control" name="tgl_lahir" id="ttl" type="text" placeholder="Tanggal/Bulan/Tahun">
-          </div>
-          <br><br> 
-          <label class="col-sm-2 control-label"> Fakultas </label>
-          <div class="col-sm-9">
-            <input class="form-control" name="fakultas" id="fakultas" type="text" placeholder="Fakultas Anda">
-          </div>
-          <br><br>
-          <label class="col-sm-2 control-label"> Jurusan </label>
-          <div class="col-sm-9">
-            <input class="form-control" name="jurusan" id="jurusan" type="text" placeholder="Jurusan Anda">
-          </div>
-          <br><br>
-          <label class="col-sm-2 control-label"> Email </label>
-          <div class="col-sm-9">
-            <input class="form-control" name="email" id="email" type="text" placeholder="Masukan Email Anda">
-          </div>
-          <br><br>
-          <label class="col-sm-9 control-label"></label>
-        </div>
 
-        <!-- Button trigger modal -->        
-        <div class="col-sm-2">
-          <!-- <button class="btn btn-lg next" data-toggle="modal" data-target="#myModal">Verifikasi</button>  -->
-          <a data-toggle="modal" data-target="#myModal">
-            <button class="btn btn-lg next">Verifikasi</button>
-          </a>
-        </div>
-  
-        <!-- Modal -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <h1>Data sudah benar?</h1>
-                  <button class="btn btn-lg next" type="submit">Submit</button> 
+          <!-- Button trigger modal -->        
+          <div class="col-sm-2">
+            <!-- <button class="btn btn-lg next" data-toggle="modal" data-target="#myModal">Verifikasi</button>  -->
+            <a data-toggle="modal" data-target="#myModal">
+              <button class="btn btn-lg next">Verifikasi</button>
+            </a>
+          </div>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h2 style="margin-left: 10px;">Data yang anda sudah benar?</h2>
+                    <button class="btn btn-lg next" type="submit">Submit</button> 
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-      </form>
+        </form>
 
-
+      </div>
     </div>
 
   </body>

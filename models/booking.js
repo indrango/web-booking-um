@@ -20,6 +20,7 @@ const BookingSchema = new Schema({
         type: Date,
         default: Date.now
     },
+    // waktu: String,
     urutan: Number,
     sesi_um: String,
     ruang_um: String,
@@ -36,32 +37,9 @@ BookingSchema.plugin(autoIncrement.plugin, {
     startAt: 1
 });
 
-
-
 // preprocessing
 BookingSchema.pre('save', function(next) {
 let booking = this;
-
-    // check data if npm on data or not
-    // BookingModel.findOne({npm_mhs: this.npm_mhs}, function(err, data) {
-    //     // check if data is exists
-    //     if (!data)
-    //         console.log('Data not found');
-
-    //     else {
-    //         console.log('Data found')
-    //         now = moment().format('ddd MMM DD YYYY')
-    //         console.log(now)
-    //         console.log(data.waktu.toDateString())
-    //         if (data.waktu.toDateString() == now) {
-    //             console.log(booking.urutan);
-    //             booking.urutan += 120;
-    //             console.log(booking.urutan);
-
-    //         }
-    //     }
-        
-    // });
 
     // sesi 1
     if (booking.urutan < 120) {
@@ -152,47 +130,26 @@ let booking = this;
 });
 
 // create model on this 
-// BookingModel = mongoose.model('Booking', BookingSchema);
-
-// console.log('pre');
-// BookingSchema.pre('save', function(next) {
-//     // check data if npm on data or not
-//     BookingModel.findOne({npm_mhs: this.npm_mhs}, function(err, data) {
-//         // check if data is exists
-//         if (!data)
-//             console.log('Data not found');
-
-//         else {
-//             console.log('Data found')
-//             now = moment().format('ddd MMM D YYYY')
-//             if (data.waktu.toDateString() == now)
-//                 booking.urutan = urutan + 120
-//         }
-        
-//     });
-//     next();
-// });
+BookingModel = mongoose.model('Booking', BookingSchema);
 
 // create blok to reset if change day
-// BookingModel.findOne({}, {}, { sort: { 'waktu': -1 } }, function(err, post) {
-//     // console.log(post.waktu.toDateString());
-//     if (!post) {
-//         return err
-//     }
+BookingModel.findOne({}, {}, { sort: { 'waktu': -1 } }, function(err, post) {
+    // console.log(post.waktu.toDateString());
+    if (!post) {
+        return err
+    }
 
-//     now = moment().format('ddd MMM D YYYY')
-//     // now = 'Sun Oct 28 2017'
-//     if (post.waktu.toDateString() != now) {
-//         BookingModel.resetCount(function(err, nextCount) {
-
-//         });
-//     }
-// });
-
-// // function
-// BookingSchema.methods.checkNPM = function(npm) {
-//     // compare npm from sesi
-//     BookingModel.findOne({this.npm: npm})
-// };
+    now = moment().format('ddd MMM D YYYY')
+    // now = 'Sun Oct 28 2017'
+    // console.log(now)
+    // console.log(post.waktu.toDateString())
+    
+    if (post.waktu.toDateString() != now) {
+        console.log('waktu sama')
+        BookingModel.resetCount(function(err, nextCount) {
+            console.log(nextCount)
+        });
+    }
+});
 
 module.exports = mongoose.model('Booking', BookingSchema);

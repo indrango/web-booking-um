@@ -1,12 +1,11 @@
     .kiri {
       box-sizing: border-box;
-      background: #894C9E;
+      background: #F2F2F2;
       height: 668px;
       font-family: 'Raleway', Arial;
+      margin-top: 90px;
     }
-    .kiri .back{
-      margin: 20px 15px 20px 0px;
-    }
+
     .back .form-group label{
       margin-top: 5px; 
       font-weight: bold;
@@ -15,7 +14,7 @@
       font-family: 'Montserrat', Arial;
     }
     .gambar img{
-        margin: 25px 50px 20px 60px;
+        margin: 65px 50px 20px 90px;
         background: #fff;
         border-radius: 50%;
         width: 150px;
@@ -37,14 +36,14 @@
       padding-top: 15px;
       font-size: 16px;
       text-align: left;
-      color: #fff;
+      color: rgb(0, 0, 0);
       letter-spacing: 0.5px;
     }
     .tulisan .lines{
       margin: 5px 5px 0px 0px;
       width: 40px;
       position: relative;
-      border-bottom: 2px solid #fff;
+      border-bottom: 2px solid #000;
       border-radius: 20px;
       bottom: 5px;
     }
@@ -54,6 +53,7 @@
       margin: 40px 5px 0px 60px;
     }
     .kanan {
+      margin-top: 90px;
       padding: 80px 10px 20px 100px;
       box-sizing: border-box;
       background: #F2F2F2;
