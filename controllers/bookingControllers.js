@@ -15,15 +15,16 @@ exports.getQuotaRemains = function(req, res) {
         if (err)
             res.send(err)
 
-        console.log(booking)
-        quota = 480 - booking.urutan
         date = moment(new Date()).add(1, 'days');
         formatted_date = moment(date).format('DD/MM/YYYY');
+
+        quota = 480 - booking.urutan
 
         res.render('users/index', {
             quota: quota,
             date: formatted_date
         })
+
     })
 }
 
@@ -106,13 +107,13 @@ exports.submitData = function(req, res) {
         }
 
         // console.log(bookings)
-        // mailgun.messages().send(data, function(err, body) {
-        //     if (err) 
-        //         console.log('got an error: ', err);
+        mailgun.messages().send(data, function(err, body) {
+            if (err) 
+                console.log('got an error: ', err);
             
-        //     console.log('Message send')
+            console.log('Message send')
             res.render('users/pages/confirmed')
-        // })
+        })
 
         // res.json(bookings)
     })
